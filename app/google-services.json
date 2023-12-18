@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "986789906376",
+    "project_id": "ecom-9e853",
+    "storage_bucket": "ecom-9e853.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986789906376:android:f2b164ec71aeb3aba8a2fd",
+        "android_client_info": {
+          "package_name": "com.wkhalil.eshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKnf90WDoUsg-jAWVezdMvPUqZQ2TvPs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

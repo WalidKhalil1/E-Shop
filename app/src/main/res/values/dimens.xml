@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_intro_address_right">115dp</dimen>
+    <dimen name="buttom_small_width">130dp</dimen>
+    <dimen name="buttom_small_height">55dp</dimen>
+    <dimen name="buttonCorners">10dp</dimen>
+    <dimen name="buttom_medium_width">200dp</dimen>
+    <dimen name="buttom_medium_height">55dp</dimen>
+    <dimen name="edit_text_height">60dp</dimen>
+</resources>

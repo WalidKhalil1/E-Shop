@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_cart_product"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@color/g_blue"
+            />
+
+        <TextView
+            android:id="@+id/tv_cart_product_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_cart_product"
+            app:layout_constraintTop_toTopOf="@id/iv_cart_product"/>
+
+        <TextView
+            android:id="@+id/tv_cart_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="$10"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_cart_product_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_cart_product_name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="5dp"
+                android:background="@drawable/search_box_background">
+
+                <ImageView
+                    android:id="@+id/iv_cart_product_plus"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/gray85" />
+
+                <TextView
+                    android:id="@+id/tv_cart_product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+
+                <ImageView
+                    android:id="@+id/iv_cart_product_minus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_minus"
+                    app:tint="@color/gray85"
+/>
+
+
+            </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_cart_product_color"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@color/g_blue"
+            app:layout_constraintStart_toStartOf="@id/tv_cart_product_price"
+            app:layout_constraintTop_toBottomOf="@id/tv_cart_product_price"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_cart_product_size"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:src="@color/g_gray500"
+            app:layout_constraintStart_toEndOf="@id/civ_cart_product_color"
+            app:layout_constraintTop_toTopOf="@id/civ_cart_product_color"/>
+
+        <TextView
+            android:id="@+id/tv_cart_product_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="@id/civ_cart_product_size"
+            app:layout_constraintBottom_toBottomOf="@id/civ_cart_product_size"
+            app:layout_constraintEnd_toEndOf="@id/civ_cart_product_size"
+            app:layout_constraintStart_toStartOf="@id/civ_cart_product_size"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
